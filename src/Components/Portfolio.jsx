@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Horizon(Technical Fest Website)",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "It is a website made by me and my colleague for the technical fest of the college. Participant can register and participate in events. It is responsive for mobile, tablet and pc.",
+    url: "https://horizon-iiitvicd.in/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Github Users Search",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "It is a website that allows the search of Github users using Github API. It fetches data from API and shows relevant graphs for that data. It also authenticates a person using Auth0.",
+    url: "https://master--github-users100.netlify.app/",
   },
   {
-    title: "My Resume Site",
+    title: "Blog Website",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "It is a personal blog website that shows all the blogs written. Blogs can be written in the form of text. Technologies used Html, CSS, JavaScript, Node.js, MongoDB, EJS, etc.",
+    url: "https://blogkeeper.azurewebsites.net/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "DBMS based Car Rental System",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "It is majorly focused on organizing information, where customers can take cars on rent, and agencies or individuals can rent their cars on the portal. It is a console-based project using MySQL and Java.",
+    url: "https://github.com/Perin-Mangukiya/Car_Rental_System",
   },
 ];
 
@@ -62,9 +62,14 @@ const Portfolio = () => {
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
+        <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideIn",
+            }}
             alt={imageAltText}
           />
         </div>

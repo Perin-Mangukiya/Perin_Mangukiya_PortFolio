@@ -14,6 +14,39 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add a slide in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add an animation for up and down arrow */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 div#main {
   display: flex;
   flex-direction: column;
